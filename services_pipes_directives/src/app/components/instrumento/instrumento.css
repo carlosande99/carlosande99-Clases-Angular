@@ -1,0 +1,121 @@
+.ficha-contenedor{
+   /*  background-color: blueviolet; */
+   background-color: #f3f3f3;
+    width: 870px;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    padding:18px;
+}
+
+
+.imagen-contenedor{
+    /* background-color:aqua; */
+    width: 25%;
+    display: flex;
+    justify-content:center;
+}
+
+.imagen-contenedor  img{
+    width: 168px;
+   /*  ESTO HACE QUE UN FONDO BLANCO SE MUESTRE TRANSPARENTE */
+   filter:brightness(1.1);
+   mix-blend-mode: multiply;
+}
+
+.datos-contenedor{
+
+    /* background-color: chartreuse; */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.titular-fabricante{
+    color:#1C1C1C;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.modelo{
+    color:#1C1C1C;
+    font-size: 18px;
+    margin-left: 0.5rem;
+}
+
+.contenedor-likes{
+
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap:3px;
+}
+
+.contenedor-likes i{
+
+    font-size: 14px;
+    
+
+}
+
+.numero-likes{
+
+    color:#8A8A8A;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.caracteristicas-principales{
+
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+
+}
+
+.caracteristicas-principales li{
+    color:#1C1C1C;
+}
+
+.caracteristicas-principales li::before{
+
+    font-family: "FontAwesome";
+    font-size: 18px;
+    content:"\f192";
+    font-weight: 900;
+    vertical-align: middle;
+    padding-right: 12px;
+
+
+}
+
+.iconos-precio-contenedor{
+
+    /* background-color: coral; */
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.precio{
+    font-size: 26px;
+    font-weight: bold;
+    text-align: right;
+    color:#1C1C1C;
+}
+
+.iconos{
+    display: flex;
+    justify-content: space-between;
+    color:#1C1C1C;
+
+}
+
+.iconos i{
+    font-size: 1.5rem;
+}

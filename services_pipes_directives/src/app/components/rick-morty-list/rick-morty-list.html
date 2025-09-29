@@ -1,0 +1,16 @@
+<section class="contenedor">
+
+@for( personaje of aDatos ; track personaje.id ){
+
+
+    <article class="tarjeta">
+
+        <img [src]=personaje.image [alt]=personaje.name>
+        <p class="nombre">{{personaje.name}}</p>
+
+    </article>
+
+}
+
+
+</section>

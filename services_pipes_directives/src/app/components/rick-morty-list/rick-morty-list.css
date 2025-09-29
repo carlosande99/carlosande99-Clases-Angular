@@ -1,0 +1,28 @@
+.contenedor{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+.nombre{
+    padding-left: 10px;
+}
+
+
+
+
+.tarjeta{
+    display:flex;
+    flex-direction: column;
+    width: 200px;
+     height: 250px;
+    background-color: darkgray;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+}

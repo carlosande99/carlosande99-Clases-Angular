@@ -1,0 +1,21 @@
+<h1 class="{{miClase}}">{{saludo}}</h1>
+
+<h1 [class] = miClase>{{saludo}}</h1>
+
+
+<img src="{{miSrc}}" alt="{{miAlt}}">
+
+<img [src] = miSrc [alt] = miAlt>
+
+<button [disabled] = estadoBoton >pulsame!!!</button>
+
+<button  (click) = "changeColor()">cambio estilo</button>
+
+
+
+<div class="mb-3">
+
+    <label for="color">Introduce un color:</label>
+    <input id="color" type="text" class="form-control" name="color" [(ngModel)] = "miClase">
+
+</div>

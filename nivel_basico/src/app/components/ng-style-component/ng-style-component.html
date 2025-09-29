@@ -1,0 +1,33 @@
+<p  [ngStyle] = "{
+
+    'background-color': colorFondo,
+    'color': colorTexto,
+    'padding' : miPadding ? '20px' : '0px',
+    'font-size.px' : tamanoTexto
+
+
+}">Genesis es magnífico</p>
+
+
+<!-- Añadir dos botones: al pulsar uno de ellos el texto va a aumemtar de tamaño pixel a pixel
+ el otro boton lo hará mas pequeño en la misma cuantia -->
+
+ <button type="button" class="btn btn-warning" (click) = "masGrande()">++ aumentar tamaño texto</button>
+
+ <button type="button" class="btn btn-warning" (click) = "masPequeno()">-- disminuir tamaño texto</button>
+
+ <!-- Crear un div de 200px x 200px de color gris
+Y dentro de ék crear un input y centrarlo
+  En el input vamos a escribir el nombre de un color CSS o hexadecimal
+  El color que escriba es el color que tomará reactivamente el div -->
+
+  <div [ngStyle] = "{
+  
+    'width':'200px',
+    'height' : '200px',
+    'background-color': bgColor,
+    'display': 'flex',
+    'align-items':'center'
+
+
+}"><input type="text" class="form-control" name="color" [(ngModel)] = "bgColor"></div>

@@ -1,0 +1,21 @@
+<p class="{{clase1}} {{clase4}}">Deep Purple</p>
+
+<p [class] = aClases>Pink Floyd</p>
+
+<!-- DEPENDIENDO DE UNA CONDICIÓN (TRUE O FALSE) 
+ QUERMOS APLICAR UNA U OTRA CLASE...
+ PARA ELLO VAMOS A UTILIZAR LA DIRECTIVA ngClass.
+ ESTA DIRECTIVA ADMITE STINGS, ARRAY Y OBJETOS-->
+
+ <p [ngClass] = "stock > 0 ? 'fondo-verde' : 'fondo-rojo' ">stock: {{stock}}</p>
+
+
+ <p [ngClass] = "{
+
+    'letra-blanca' : true,
+    'fondo-verde' : stock > 0,
+    'fondo-rojo' : stock == 0,
+    'padding10' : stock == 0
+
+
+ }">stock: {{stock}}</p>

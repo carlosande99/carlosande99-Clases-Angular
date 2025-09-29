@@ -1,0 +1,17 @@
+
+@if(esVisible){
+
+   <!--  <img src="manzana.jpg" alt="una manzana"> -->
+   <app-two-way-data-binding />
+
+}@else{
+
+    <img src="preloader.gif" alt="un preloader espantoso">
+
+}
+
+
+
+
+<button  (click) = "toogle($event)">Púlsame</button>
+
