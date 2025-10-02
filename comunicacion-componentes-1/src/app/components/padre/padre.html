@@ -1,5 +1,16 @@
 <div class="caja">
-    <app-hijo/>
+
+    <label for="mensaje">mensaje:</label>
+    <input type="text" id="mensaje" [(ngModel)] = "mensajeHijo">
+
+    <app-hijo [mensaje]="mensajeHijo" (mensajeEnviado) = "mensajeDelHijo($event)"  />
+
+
+    <p>{{mensajeProvinienteDellHijo}}</p>
+
 </div>
+
+
+
 
 

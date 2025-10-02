@@ -9,5 +9,5 @@ import { Padre } from './components/padre/padre';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('comunicacion-componentes-1');
+  protected readonly title = signal('comunicacion-componentes-3');
 }

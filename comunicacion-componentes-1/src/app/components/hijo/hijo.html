@@ -1,3 +1,9 @@
 <div class="caja">
+
+    <label for="mensaje">mensaje:</label>
+    <input type="text" id="mensaje" [(ngModel)] = "elMensaje" (ngModelChange) = mensajeParaPadre()>
+
+    <p>{{mensaje}}</p>
+
     
 </div>

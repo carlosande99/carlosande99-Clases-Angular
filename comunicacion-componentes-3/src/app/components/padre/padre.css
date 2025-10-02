@@ -1,0 +1,9 @@
+.cuadrado{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 500px;
+    height: 500px;
+    background-color: cadetblue;
+}
