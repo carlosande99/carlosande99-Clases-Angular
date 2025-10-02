@@ -1,6 +1,10 @@
 
 <div class="cuadrado">
+    @if(estado){
+        <p>Estado encendido</p>
+    }@else{
+        <p>Estado apagado</p>
+    }
 
-
-
+    <button [disabled]="!estado">pulsame</button>
 </div>

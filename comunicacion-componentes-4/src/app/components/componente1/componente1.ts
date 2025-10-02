@@ -13,6 +13,7 @@ export class Componente1 implements OnInit , OnDestroy{
   private _comunicacionService:Comunicacion = inject(Comunicacion);
 
   suscripcion:Subscription;
+  estado:boolean;
 
   //Çuando nos suscribimos a un Observable "Hot" tenemos que tener en cuenta destruirlo
   //en el momento en que el componente se desmonte
@@ -27,10 +28,10 @@ export class Componente1 implements OnInit , OnDestroy{
     this.suscripcion = this._comunicacionService.elemento$.subscribe({
 
 
-      next: (data) => {}
+      next: (data) => {this.estado = data}
 
 
     });
 
-}
+  }
 }
